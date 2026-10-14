@@ -14,6 +14,45 @@ Nghiên cứu thực nghiệm bóc tách (Ablation Study) về giải pháp xử
 
 ## 🚀 Hướng Dẫn Tái Lập Thí Nghiệm
 ```bash
+# 1. Cài đặt các thư viện phụ thuộc
 pip install -r requirements.txt
+
+# 2. Chạy pipeline tiền xử lý dữ liệu (Feature Engineering & Stratified Split)
 python -m src.preprocessing
-jupyter notebook "Working Files/notebooks/04_ablation_experiments.ipynb"
+
+# 3. Chạy các Notebook thực nghiệm
+jupyter notebook notebooks/01_eda_and_preprocessing.ipynb
+jupyter notebook notebooks/02_baseline_model.ipynb
+jupyter notebook notebooks/03_module_implementations.ipynb
+jupyter notebook notebooks/04_ablation_experiments.ipynb
+```
+
+## 📁 Cấu Trúc Dự Án
+```
+.
+├── data/
+│   ├── raw/                 # Dữ liệu gốc (Bank churn data set 80k.xlsx)
+│   └── processed/           # Dữ liệu sau tiền xử lý (Train/Val/Test numpy arrays)
+├── notebooks/
+│   ├── 01_eda_and_preprocessing.ipynb
+│   ├── 02_baseline_model.ipynb
+│   ├── 03_module_implementations.ipynb
+│   └── 04_ablation_experiments.ipynb
+├── plans/                   # Kế hoạch nghiên cứu chính thức (.docx)
+├── reports/
+│   ├── WEEK04_Final_Technical_Report.md  # Báo cáo kỹ thuật toàn văn
+│   ├── figures/             # Biểu đồ phân tích độ phân giải cao
+│   ├── 02_baselines_results.json
+│   └── ablation_results.json
+├── src/
+│   ├── calibration.py       # Temperature Scaling
+│   ├── explainability.py    # Phân tích Odds Ratio
+│   ├── losses.py            # Logit Adjustment & ε-Softmax
+│   ├── metrics.py           # Bộ đo lường (Balanced Acc, Macro F1, ECE...)
+│   ├── models.py            # LogitAdjustedClassifier & EpsilonSoftmaxClassifier
+│   ├── noise.py             # Giả lập nhiễu nhãn liền kề (Adjacent Label Noise)
+│   ├── preprocessing.py     # Pipeline tiền xử lý hoàn chỉnh
+│   └── utils.py             # Tiện ích trực quan hóa & I/O
+├── requirements.txt
+└── README.md
+```

@@ -1,0 +1,40 @@
+feature
+credit_sco
+age
+balance
+monthly_ir
+married
+nums_card
+nums_service
+active_member
+last_transaction_month
+exit
+risk_score
+cluster_group
+balance_to_income
+service_per_card
+log_balance
+log_monthly_ir
+gender_male
+occupation_Giáo viên/Giảng viên
+occupation_Hưu trí
+occupation_Kinh doanh/Bán hàng
+occupation_Kế toán/Tài chính
+occupation_Kỹ sư/Chuyên viên IT
+occupation_Lao động phổ thông
+occupation_Nhân viên văn phòng/Công chức
+occupation_Nội trợ/Sinh viên
+occupation_Quản lý/Lãnh đạo
+origin_province_Bình Dương
+origin_province_Cần Thơ
+origin_province_Hà Nội
+origin_province_Long An
+origin_province_TP. Hồ Chí Minh
+origin_province_Tiền Giang
+origin_province_Tỉnh khác
+origin_province_Đồng Nai
+customer_segment_Emerging
+customer_segment_Mass
+customer_segment_Priority
+digital_behavior_offline
+risk_segment_Medium

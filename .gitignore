@@ -21,9 +21,10 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 
-# (Khuyến nghị) Bỏ qua toàn bộ file word/tài liệu nháp
+# Bỏ qua tài liệu word nháp, ngoại trừ kế hoạch nghiên cứu trong plans/
 *.docx
 *.doc
+!plans/*.docx
 # Data files (Tùy chọn: file Excel 11.5MB vẫn push được lên GitHub vì < 100MB, 
 # nhưng nếu tạo ra các file data trung gian quá nặng thì bỏ ghi chú dòng dưới)
 # Working Files/data/processed/*.csv

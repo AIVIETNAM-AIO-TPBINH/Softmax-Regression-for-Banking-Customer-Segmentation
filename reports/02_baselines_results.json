@@ -1,0 +1,47 @@
+[
+    {
+        "balanced_accuracy": 0.5382565468954484,
+        "macro_f1": 0.5701475602480063,
+        "recall_bronze": 0.9652483634963419,
+        "recall_silver": 0.2585438335809807,
+        "recall_gold": 0.39097744360902253,
+        "gold_pr_auc": 0.4541176262239472,
+        "ece_bronze": 0.0323012799811267,
+        "ece_silver": 0.028485087933547544,
+        "ece_gold": 0.008069051668781824,
+        "ece_mean": 0.022951806527818693,
+        "overall_ece": 0.03199438328535943,
+        "extreme_twostep_rate": 0.008916666666666666,
+        "model": "Standard Softmax"
+    },
+    {
+        "balanced_accuracy": 0.837007633950526,
+        "macro_f1": 0.636005656511993,
+        "recall_bronze": 0.8225837504813246,
+        "recall_silver": 0.7109955423476969,
+        "recall_gold": 0.9774436090225563,
+        "gold_pr_auc": 0.38329839785671815,
+        "ece_bronze": 0.16696851602750742,
+        "ece_silver": 0.11676708665372267,
+        "ece_gold": 0.0502014293737847,
+        "ece_mean": 0.11131234401833827,
+        "overall_ece": 0.04843094065604643,
+        "extreme_twostep_rate": 0.016416666666666666,
+        "model": "Class-Weighted Softmax"
+    },
+    {
+        "balanced_accuracy": 0.827577885048969,
+        "macro_f1": 0.7179088968621752,
+        "recall_bronze": 0.8856372737774355,
+        "recall_silver": 0.8038632986627043,
+        "recall_gold": 0.793233082706767,
+        "gold_pr_auc": 0.6767155803442512,
+        "ece_bronze": 0.0692789481314217,
+        "ece_silver": 0.06508140226931644,
+        "ece_gold": 0.012021443340257345,
+        "ece_mean": 0.04879393124699849,
+        "overall_ece": 0.05487431148212081,
+        "extreme_twostep_rate": 0.004583333333333333,
+        "model": "LightGBM Classifier"
+    }
+]
